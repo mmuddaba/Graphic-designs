@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>How to Avoid SCAMS!</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <style>
+    /* Custom styles for the page */
+    
+    /* General Background and Text Colors */
+    body {
+      background-color: #f9f9f9; /* Light background for contrast */
+      color: #333; /* Dark text color for readability */
+    }
+
+    /* Header Section */
+    header {
+      background-color: #d9534f; /* Red background for urgency */
+      color: white;
+      padding: 50px 0;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards, bounce 1.5s forwards;
+      animation-delay: 0.5s, 0.5s;
+    }
+
+    header h1 {
+      font-weight: bold;
+      animation: bounce 2s infinite; /* Bounce effect for the main heading */
+    }
+
+    header p {
+      font-size: 1.25rem;
+      animation: zoomIn 1.5s forwards;
+      animation-delay: 1s;
+    }
+
+    /* Infographic Section */
+    section img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+      animation-delay: 1s;
+    }
+
+    /* Panelists Section */
+    section.bg-white {
+      background-color: white;
+    }
+
+    /* Style for panelist images */
+    .panelist-img {
+    width: 100px;  /* Set desired width */
+    height: 100px; /* Set desired height */
+    }
+
+    section.bg-white h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #d9534f; /* Red color for titles */
+      opacity: 0;
+      animation: slideInLeft 1s forwards;
+      animation-delay: 1s;
+    }
+
+    section.bg-white p {
+      font-size: 1.1rem;
+      color: #555;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+      animation-delay: 1.2s;
+    }
+
+    section.bg-white .col-md-4 {
+      margin-bottom: 30px;
+      opacity: 0;
+      animation: slideIn 1s forwards;
+    }
+
+    section.bg-white .col-md-4:nth-child(1) {
+      animation-delay: 1.5s;
+    }
+
+    section.bg-white .col-md-4:nth-child(2) {
+      animation-delay: 1.7s;
+    }
+
+    section.bg-white .col-md-4:nth-child(3) {
+      animation-delay: 1.9s;
+    }
+
+    /* Event Agenda Section */
+    section.py-5 {
+      background-color: #f8f8f8; /* Light gray background */
+    }
+
+    ul.list-group {
+      margin-top: 20px;
+    }
+
+    ul.list-group-item {
+      background-color: #fff;
+      font-size: 1.1rem;
+      padding: 15px;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    ul.list-group-item:nth-child(1) {
+      animation-delay: 1.5s;
+    }
+
+    ul.list-group-item:nth-child(2) {
+      animation-delay: 1.7s;
+    }
+
+    ul.list-group-item:nth-child(3) {
+      animation-delay: 1.9s;
+    }
+
+    /* RSVP Section */
+    section.bg-dark {
+      background-color: #343a40; /* Dark background for contrast */
+      color: white;
+    }
+
+    section.bg-dark h2 {
+      font-size: 2rem;
+      color: #f0ad4e; /* Yellow color for a call to action */
+      animation: slideInUp 1s forwards;
+      animation-delay: 1.5s;
+    }
+
+    section.bg-dark p {
+      font-size: 1.2rem;
+    }
+
+    section.bg-dark .btn {
+      font-size: 1.1rem;
+      padding: 15px 30px;
+      background-color: #f0ad4e; /* Yellow button */
+      border: none;
+      transition: transform 0.3s ease;
+    }
+
+    section.bg-dark .btn:hover {
+      transform: scale(1.1); /* Button hover effect */
+      background-color: #d9534f; /* Red when hovered for stronger action */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #343a40; /* Dark footer for professionalism */
+      color: white;
+      padding: 20px 0;
+    }
+
+    footer p {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+    /* Keyframe Animations */
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Bounce Animation */
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      25% {
+        transform: translateY(-10px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      75% {
+        transform: translateY(-5px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    /* Zoom-in Animation */
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Slide-in from Left */
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    /* Slide-in from Bottom */
+    @keyframes slideInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Slide-in Animation */
+    @keyframes slideIn {
+      from {
+        transform: translateX(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid bg-light">
+    <!-- Header Section -->
+    <header class="text-center py-5">
+      <h1 class="display-3">How to Avoid SCAMS!</h1>
+      <p class="lead">Learn how to identify and prevent scams as an international student</p>
+      <p><strong>Date & Time:</strong> 23rd January 2025, 11:00 AM to 12:00 NOON</p>
+    </header>
+
+    <!-- Infographic Section -->
+    <section class="text-center my-5">
+      <h2>Scams: A Growing Concern</h2>
+      <p><strong>International students are being targeted at alarming rates. Here's how severe the situation is:</strong></p>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <img src="https://media-hosting.imagekit.io//189c4c7d8a9946bc/scam.png?Expires=1731644642&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=a03VGdhBP~WB-t6SFDqTVeqmLRgUsPgWVz3lXyidhUVVuoZmmy-YHz3EVyuSOywrqeZvP8hfs5f7npT8qO-WbpEgG6sFQifeBlVz-bWVdDGwA74jS8EriSZa8azGNixhIFa04xiW7J4a4bmVAYIb0i8sucF5JfcAoHskOyKH1SBoIrmrO7bNJWv2pxMMLF7r4gtQaOXwCrOpSA0jC0CaU5gxNj4IBCyeuB~kJBpTk6Ba0U8qDGyV~mWo1PdjJGYAhD7ddo4h7KStOQrS~JCmJJ5lxqMHxhnWfbUhqQeX6B2-yBCkk06T8WXNrw1Dja1rqInQYsZgK-RF9jhPm1-B1A__" alt="Scam Statistics Infographic" class="img-fluid">
+        </div>
+      </div>
+    </section>
+
+    <!-- Panelists Section -->
+    <section class="bg-white py-5">
+      <h2 class="text-center">Meet Our Panelists</h2>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="https://media-hosting.imagekit.io//1b91a9b042fd4e2c/3.png?Expires=1731645810&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=d8hQjo29283AZrtcvB2y9RUBMTWeXAMJ2VX59KUFYMtq4eEUEFSgyLnRmRDFqG2yazXI4C6qwl871V84ZRSMW5MF2BOE0BiTzm09yTbwxqVDfJJX7n-wE8mpE1YDT~hoIPdB4g24W9V5XE8vDaELInsr6OoPRzINyUXuEkFNYnuIZcqgZHYZPQhlSJKArqkx3jivCbPlkLLmfCJ7RfXITiDnanJTqeJBMQDbqdqMQ3-meMBt1Hj-mvEnX06Z5kcqPbp0YJFHwItU3Ua9TkRg3zgwOrElA658oFG2YRgnkJhKtEkX0RN3kiwUGAbRJOedZVWZV0NyLS3xACTG2cMRTw__" alt="Alice Peterson" class="rounded-circle mb-3 panelist-img">
+          <h3>Alice Peterson</h3>
+          <p><em>President, Scam Prevention NGO</em></p>
+          <p>Alice leads one of the top scam prevention organizations dedicated to protecting students from fraud.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="https://media-hosting.imagekit.io//ddf4c65a217d4551/2.png?Expires=1731645810&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=rPD043~8IKSsjWZeilq7NYK~RQnJB0fwsMcLAFzRAQESmstJM7kLDOBSaOXmnblFvLi5QIoQfZjKWXElXDdBcQ0MO54Jq9NvNWuFXxgpbAaRdyQvGhNPKpg-nUASYuPHD3JxxSrq5d14g4ZmgBW4Lh3a5~aaf~PxYqMYF-P72U8wGnl1~B7P3i9QvrVQNvvgf0OCx89FM0h-U9vlDk9TDPb~Ttgz5IZ~UhK7d7e0mpvARTmUjm5FhVc6j3tj2sIw9z9-08r2qmljE8FVisPb81XDVfmHi8KaGLeMwpjk2LJ5z52sXi4eNa8ThjLGkmlP2EMPID5NTwsw68~niWN36w__" alt="Bob Malhotra" class="rounded-circle mb-3 panelist-img">
+          <h3>Bob Malhotra</h3>
+          <p><em>ISSC Staff Representative</em></p>
+          <p>Bob provides support to international students at ISSC, helping them navigate scam-related issues.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="https://media-hosting.imagekit.io//2aeaea277aa643a9/4.png?Expires=1731645810&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=wa~L6gr0nTHAktSd4iJWRkdpjR~xfzm5EIfReFEjIx96qGt9zMpVNmTQvxqh8YxluRgBWcpQ9D86-dLh0WbSFFU7AvCVQwp3NAmS2EPVmCvNpBn4Jq5K3p~65T6igBXm1wxceSoLYoIA2PpqA76a8vE01xFPDX0edgE4msmkN8qIvR3iawbhDoYMOzsScymosxfbzMI2Q5FYSxaFFViLIPzbqPYQV2w7iGil0waXyn8z3Q6JjwbzxXwTP~4~ZBoD8wzcueqsa8jPkgPJXHM~3g8ZVHTyDNBvwvQXXqfI4yfI8X6B~02x8NJKqD6rdzVq-r6tjINnp7Kfy46ozC4ruA__" alt="Carl Inspector" class="rounded-circle mb-3 panelist-img">
+          <h3>Carl Inspector</h3>
+          <p><em>US Homeland Security Officer</em></p>
+          <p>Carl works with authorities to tackle fraud targeting international students and will provide crucial tips.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Agenda Section -->
+    <section class="py-5">
+      <h2 class="text-center">Event Agenda</h2>
+      <div class="container">
+        <ul class="list-group">
+          <li class="list-group-item"><strong>11:00 AM - 11:15 AM:</strong> Check-in</li>
+          <li class="list-group-item"><strong>11:15 AM - 11:45 AM:</strong> Panel Discussion</li>
+          <li class="list-group-item"><strong>11:45 AM - 12:00 NOON:</strong> Q&A Session</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="text-center py-5 bg-dark text-white">
+      <h2>RSVP Now!</h2>
+      <p>Don't miss the chance to learn how to protect yourself from scams.</p>
+      <a href="https://issc.asu.edu/" class="btn btn-primary btn-lg">RSVP Here</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+      <p>Event Hosted by the Graduate Student Initiatives Team</p>
+    </footer>
+
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

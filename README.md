@@ -32,5 +32,5 @@ RSVP Link - https://issc.asu.edu/
 "design1.html" consists of the entire design made using Canva,
 Canva link to the design: https://www.canva.com/design/DAGWA9MvlnE/TIiNOzPfoRmBuF0W5APZ0w/edit?utm_content=DAGWA9MvlnE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
-"design2.html" consists of another design that uses canva for infographics and the other details are created using HTML and CSS.
-Canva Link to the infographics portion: 
+"design2.html" consists of another design that uses Canva for infographics and the other details are created using HTML and CSS.
+Canva Link to the infographics portion: https://www.canva.com/design/DAGWBcnprK4/sdlcD6V_GxkCQG21hSS8mQ/edit?utm_content=DAGWBcnprK4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
